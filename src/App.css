@@ -7,3 +7,45 @@
   -webkit-transform: skew(-45deg);
   transform: skew(-45deg);
 } */
+
+.navbar{
+  margin: 15px 30px 0px 30px;}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.email-icon{
+  color: #dcca87;
+}
+.github-icon {
+  color: #dcca87;
+}
+.linkedin-icon {
+  color: #dcca87;
+}
+hr {
+  background-color:#dcca87;
+  border: none;
+  height: 2px;
+}
+.portfolio-body {
+  margin: 20px 30px 20px 30px;
+}
+.greeting{
+  color: #dcca87;
+  font-family: 'Cormorant', serif;
+  font-family: 'Cormorant Upright', serif;
+  font-size: 70px;
+  line-height: 0.1;
+}
+.intro{
+  color: white;
+  font-size: 25px;
+}
+.project-title{
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 0.1;
+}

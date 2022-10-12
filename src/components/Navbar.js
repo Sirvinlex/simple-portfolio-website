@@ -5,7 +5,14 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className='navbar'>
+        <div className='nav-links'>
+            <MdEmail className='email-icon' size={40} />
+            <BsGithub className='github-icon' size={40} />
+            <BsLinkedin className='linkedin-icon' size={40} />
+        </div>
+        <hr />
+    </div>    
   )
 }
 
