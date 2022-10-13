@@ -9,20 +9,49 @@
 } */
 
 .navbar{
-  margin: 15px 30px 0px 30px;}
+  margin: 10px 20px 0px 20px;}
+.logo{
+  color: #dcca87;
+  font-family: 'Cormorant', serif;
+  font-family: 'Cormorant Upright', serif;
+  font-size: 60px;
+  text-align: center;
+}
 .nav-links{
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
 }
-.email-icon{
+.nav-links a{
+  text-decoration: none;
+}
+.contact-icon{
   color: #dcca87;
+  cursor: pointer;
+}
+.close-btn{
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 }
 .github-icon {
   color: #dcca87;
 }
 .linkedin-icon {
   color: #dcca87;
+}
+.contact-details{
+  background-color: #dcca87;
+  position: absolute;
+  z-index: 1;
+  height: 150px;
+  width: 300px;
+  border-radius: 10px;
+  top: 170px;
+  left: 20px;
 }
 hr {
   background-color:#dcca87;
@@ -34,9 +63,9 @@ hr {
 }
 .greeting{
   color: #dcca87;
-  font-family: 'Cormorant', serif;
-  font-family: 'Cormorant Upright', serif;
-  font-size: 70px;
+  /* font-family: 'Cormorant', serif; */
+  /* font-family: 'Cormorant Upright', serif; */
+  font-size: 50px;
   line-height: 0.1;
 }
 .intro{
@@ -48,4 +77,18 @@ hr {
   font-size: 50px;
   font-weight: 500;
   line-height: 0.1;
+}
+.projects a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.projects  {
+  margin-left: 10px;
+  line-height: 1.2;
+}
+.footer{
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
 }

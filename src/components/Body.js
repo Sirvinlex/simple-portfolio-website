@@ -12,6 +12,14 @@ const Body = () => {
          </p>
          <hr />
          <h3 className='project-title'>Projects</h3>
+         <div className='projects'>
+            <p><a href='https://tik-video-app.netlify.app/' target='_blank' rel="noopener noreferrer">Tik-Vid video sharing app</a></p>
+            <p><a href='https://job-checker.netlify.app/' target='_blank' rel="noopener noreferrer">Job Checker</a></p>
+            <p><a href='https://tca-fitness-gym.netlify.app/' target='_blank' rel="noopener noreferrer">Fitness app</a></p>
+            <p><a href='https://vinlex-admin-dashboard-template.netlify.app/' target='_blank' rel="noopener noreferrer">Admin dashboard template</a></p>
+            <p><a href='https://vinlex-restaurant-landing-page.netlify.app/' target='_blank' rel="noopener noreferrer">Restaurant landing page</a></p>
+         </div>
+         <hr />
     </div>
   )
 }

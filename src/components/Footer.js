@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
   return (
-    <div>Footer</div>
+    <div className='footer'> &copy; {year} VinlexCode
+</div>
   )
 }
 
