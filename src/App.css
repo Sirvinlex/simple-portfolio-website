@@ -37,6 +37,7 @@
   border: none;
   cursor: pointer;
 }
+
 .github-icon {
   color: #dcca87;
 }
@@ -48,10 +49,21 @@
   position: absolute;
   z-index: 1;
   height: 150px;
-  width: 300px;
+  width: 350px;
   border-radius: 10px;
   top: 170px;
-  left: 20px;
+  right: 20px;
+}
+.contact-details-container {
+  margin-left: 10px;
+}
+.contact-details-container p {
+  font-size: 23px;
+}
+.copy-btn{
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 }
 hr {
   background-color:#dcca87;
@@ -63,8 +75,6 @@ hr {
 }
 .greeting{
   color: #dcca87;
-  /* font-family: 'Cormorant', serif; */
-  /* font-family: 'Cormorant Upright', serif; */
   font-size: 50px;
   line-height: 0.1;
 }
@@ -74,7 +84,7 @@ hr {
 }
 .project-title{
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 0.1;
 }
@@ -87,8 +97,81 @@ hr {
   margin-left: 10px;
   line-height: 1.2;
 }
+.project-hr{
+  display: none;
+}
 .footer{
   color: white;
   text-align: center;
-  margin-bottom: 10px;
+}
+.footer-container{
+  margin: 0 20px 10px 20px;
+}
+@media screen and (max-width: 390px) {
+  .contact-details {
+      width: 280px;
+    }
+  .contact-details-container p {
+      font-size: 17px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .logo-links-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 25px;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+  .contact-details {
+    top: 100px;
+  }
+  .body-hr{
+    display: none;
+  }
+  .portfolio-body{
+    padding: 0 100px 0 0px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+  }
+  .greeting{
+    font-size: 70px;
+    font-weight: 100;
+  }
+  .intro{
+    font-size: 17px;
+    padding-right: 100px;
+  }
+  .project-title{
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .projects p a{
+    font-size: 16px;
+  }
+  .project-hr{
+    width: 120px;
+    margin-left: 0px;
+    display: block;
+  }
+  .footer-container{
+    padding-top: 100px;
+  }
+  .footer-hr{
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .portfolio-body {
+      margin: 0 -100px 0 100px;
+  }
 }
