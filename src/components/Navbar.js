@@ -3,10 +3,9 @@ import { MdEmail, MdPermContactCalendar, MdCancel,MdFileCopy } from 'react-icons
 import { BsGithub,BsFillTelephoneFill,BsLinkedin,BsCheckLg } from 'react-icons/bs'
 
 
-const Navbar = () => {
+const Navbar = ({copiedEmail, setCopiedEmail,copiedPhone, setCopiedPhone}) => {
   const [contact, setContact] = useState(false);
-  const [copiedEmail, setCopiedEmail] = useState(false);
-  const [copiedPhone, setCopiedPhone] = useState(false);
+  
    function handleEmailCopy (){
       const value = 'vinlex3030@gmail.com';
       navigator.clipboard.writeText(value);
@@ -29,6 +28,7 @@ const Navbar = () => {
    }
   return (
     <div className='navbar'>
+        
         <div className='logo-links-container'>
           <div className='logo'>VinlexCode</div>
           <div className='nav-links'>
@@ -45,11 +45,11 @@ const Navbar = () => {
             <div className='contact-details-container'>
               <p><MdEmail />{' '} vinlex3030@gmail.com 
                 {!copiedEmail ? (<button className='copy-btn' type='button' onClick={handleEmailCopy} ><MdFileCopy /></button>)
-                : (<button className='copy-btn' type='button' ><BsCheckLg /></button>)}
+                : (<button className='check-btn' type='button' ><BsCheckLg /></button>)}
               </p>
               <p><BsFillTelephoneFill  />{' '}  +2347067292648
                 {!copiedPhone ? (<button className='copy-btn' type='button' onClick={handlePhoneCopy}><MdFileCopy /></button>)
-                : (<button className='copy-btn' type='button'><BsCheckLg /></button>)}
+                : (<button className='check-btn' type='button'><BsCheckLg /></button>)}
               </p>
             </div>
           </div>
