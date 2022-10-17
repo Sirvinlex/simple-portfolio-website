@@ -55,11 +55,13 @@
   right: 20px;
 }
 .contact-details-container {
+  padding-top: 20px;
   margin-left: 10px;
 }
 .contact-details-container p {
-  font-size: 23px;
+  font-size: 16px;
 }
+
 .copy-btn{
   background-color: inherit;
   border: none;
@@ -131,11 +133,12 @@ hr {
 }
 @media screen and (max-width: 390px) {
   .contact-details {
-      width: 280px;
+      width: 300px;
     }
   .contact-details-container p {
-      font-size: 17px;
+      font-size: 15px;
   }
+  
 }
 @media screen and (min-width: 1025px) {
   .logo-links-container{

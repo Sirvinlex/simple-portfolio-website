@@ -7,7 +7,7 @@ const Navbar = ({copiedEmail, setCopiedEmail,copiedPhone, setCopiedPhone}) => {
   const [contact, setContact] = useState(false);
   
    function handleEmailCopy (){
-      const value = 'vinlex3030@gmail.com';
+      const value = 'alexander.vincentchinonso@gmail.com';
       navigator.clipboard.writeText(value);
       setTimeout(()=>{
         setCopiedEmail(true);
@@ -43,7 +43,7 @@ const Navbar = ({copiedEmail, setCopiedEmail,copiedPhone, setCopiedPhone}) => {
           <div className='contact-details'>
             <button className='close-btn' onClick={() => setContact(false)} type='button' ><MdCancel size={20} /></button>
             <div className='contact-details-container'>
-              <p><MdEmail />{' '} vinlex3030@gmail.com 
+              <p><MdEmail />{' '} alexander.vincentchinonso@gmail.com
                 {!copiedEmail ? (<button className='copy-btn' type='button' onClick={handleEmailCopy} ><MdFileCopy /></button>)
                 : (<button className='check-btn' type='button' ><BsCheckLg /></button>)}
               </p>
